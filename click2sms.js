@@ -90,7 +90,7 @@
     if(flag) flag.className='flag flag--'+language;
     if(topic) topic.setAttribute('aria-label',t.topicLabel);
     document.querySelectorAll('[data-arrow]').forEach(el=>el.setAttribute('aria-label',t.continueLabel));
-    document.querySelectorAll('[data-home]').forEach(el=>{el.href='index.html?lang='+language;el.setAttribute('aria-label',t.home);});
+    document.querySelectorAll('[data-home]').forEach(el=>{el.href='home.html?lang='+language;el.setAttribute('aria-label',t.home);});
     document.querySelectorAll('[data-legal]').forEach(el=>{el.href=F.legalHref(el.dataset.legal,page,language);});
     document.querySelectorAll('[data-footer-nav]').forEach(el=>el.setAttribute('aria-label',t.legalNav));
     document.querySelectorAll('[data-art]').forEach(el=>el.setAttribute('aria-label',t.spaceAlt));

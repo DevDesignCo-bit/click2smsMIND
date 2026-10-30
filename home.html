@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172b34">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Mind+ | Träna</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="click2sms.css?v=20261030-3">
+  <link rel="stylesheet" href="training.css?v=20261030-3">
+  <script src="flow.js?v=20261030-3" defer></script>
+  <script src="click2sms.js?v=20261030-3" defer></script>
+</head>
+<body class="training-page" data-service="mind" data-flow-page="train">
+<main class="training-shell">
+  <header class="training-heading">
+    <h1 data-i18n="train">Träna</h1>
+    <nav class="training-language" aria-label="Språk / Language">
+      <button type="button" data-language="sv" lang="sv" aria-label="Svenska" aria-pressed="true">SE</button>
+      <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+  <aside class="training-notice" data-training-notice aria-label="Information">
+    <span class="notice-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><circle cx="18" cy="15" r="10" fill="#f2edcc"/><path d="M14 25h8v6h-8Z" fill="#41aabd"/><path d="m14 12 4 5 4-5M18 17v8" fill="none" stroke="#8acbd5" stroke-width="2"/></svg></span>
+    <p data-i18n="trainNotice">Varje träningspass innehåller 2 hjärnspel och 1 utvärderingsuppgift och avslutas med en uppdatering av dina personliga poäng!</p>
+    <button type="button" class="notice-close" data-close-notice aria-label="Stäng">×</button>
+  </aside>
+  <nav class="training-grid" aria-label="Välj ett träningspass" data-training-list>
+    <a class="training-card" href="index.html?lang=sv&amp;training=personal" data-subscribe="personal"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="M25 63 80 45l55 18-55 18Z" fill="#41aabd"/><path d="M47 79v30c20 17 46 17 66 0V79L80 90Z" fill="#41aabd"/><path d="M123 72v32" stroke="#374959" stroke-width="5"/><circle cx="123" cy="108" r="5" fill="#374959"/><path d="m119 112-3 15h13l-3-15" fill="#374959"/></svg></span><span data-i18n="personal">Personlig hjärnträning</span></a>
+    <a class="training-card" href="index.html?lang=sv&amp;training=memory" data-subscribe="memory"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><path d="m51 51-18 29 18 29h35l18-29-18-29Z" fill="#82cbd8"/><path d="m86 51-18 29 18 29h35l18-29-18-29Z" fill="#607382"/><path d="m86 51-18 29 18 29 18-29Z" fill="#3b5e6c"/></svg></span><span data-i18n="memory">Minnesträning</span></a>
+    <a class="training-card" href="index.html?lang=sv&amp;training=math" data-subscribe="math"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="91" cy="54" r="15" fill="#f2edcc"/><text x="91" y="61" text-anchor="middle" font-family="Arial" font-size="25" fill="#fff">×</text><circle cx="95" cy="99" r="24" fill="#374959"/><path d="M84 99h22" stroke="white" stroke-width="4"/><circle cx="63" cy="87" r="31" fill="#41aabd"/><path d="M49 87h28M63 73v28" stroke="white" stroke-width="4"/></svg></span><span data-i18n="math">Huvudräkning</span></a>
+    <a class="training-card" href="index.html?lang=sv&amp;training=perception" data-subscribe="perception"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><g fill="none" stroke-linecap="round" stroke-width="8"><path d="M37 57q8-18 24-26M99 31q16 8 24 26M37 103q8 18 24 26M99 129q16-8 24-26" stroke="#41aabd"/><path d="M49 63q5-12 17-18M94 45q12 6 17 18M49 97q5 12 17 18M94 115q12-6 17-18" stroke="#374959"/></g><path d="M30 80q50-47 100 0-50 47-100 0" fill="#f2edcc"/><circle cx="80" cy="80" r="23" fill="#41aabd"/><circle cx="80" cy="80" r="10" fill="#374959"/><path d="m80 80 8-12v13Z" fill="#41aabd"/></svg></span><span data-i18n="perception">Perceptionsträning</span></a>
+    <a class="training-card" href="index.html?lang=sv&amp;training=focus" data-subscribe="focus"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><circle cx="80" cy="80" r="57" fill="#374959"/><circle cx="80" cy="80" r="51" fill="#41aabd"/><circle cx="80" cy="80" r="42" fill="#374959"/><circle cx="80" cy="80" r="33" fill="#41aabd"/><circle cx="80" cy="80" r="23" fill="#374959"/><circle cx="80" cy="80" r="12" fill="#41aabd"/></svg></span><span data-i18n="focus">Koncentrationsträning</span></a>
+    <a class="training-card" href="index.html?lang=sv&amp;training=logic" data-subscribe="logic"><span class="training-circle"><svg viewBox="0 0 160 160" aria-hidden="true"><g fill="none" stroke-linecap="square"><circle cx="92" cy="102" r="27" stroke="#41aabd" stroke-width="18"/><path d="M92 60v11M92 133v11M50 102h11M123 102h11M62 72l8 8M114 124l8 8M62 132l8-8M114 80l8-8" stroke="#41aabd" stroke-width="13"/><circle cx="52" cy="48" r="14" stroke="#f2edcc" stroke-width="8"/><path d="M52 25v6M52 65v6M29 48h6M69 48h6M36 32l5 5M63 59l5 5M36 64l5-5M63 37l5-5" stroke="#f2edcc" stroke-width="7"/><circle cx="109" cy="42" r="10" stroke="#374959" stroke-width="6"/><path d="M109 25v4M109 55v4M92 42h4M122 42h4M97 30l3 3M118 51l3 3M97 54l3-3M118 33l3-3" stroke="#374959" stroke-width="5"/></g></svg></span><span data-i18n="logic">Logikträning</span></a>
+  </nav>
+  <footer class="training-footer"><nav aria-label="Juridisk information" data-footer-nav><a href="terms.html?from=train&amp;lang=sv" data-legal="terms.html" data-i18n="terms">Villkor &amp; Betingelser</a><a href="privacy.html?from=train&amp;lang=sv" data-legal="privacy.html" data-i18n="privacy">Integritetspolicy</a></nav></footer>
+</main>
+<nav class="train-tabs" aria-label="Huvudmeny" data-training-nav>
+  <a href="index.html?lang=sv&amp;training=play" data-subscribe="play"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8 6 4-6 4Z"/></svg><span data-i18n="play">Spela</span></a>
+  <a href="index.html?lang=sv&amp;training=evaluation" data-subscribe="evaluation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14v15H5ZM9 3h6v4H9M8 13l3 3 5-6"/></svg><span data-i18n="evaluation">Utvärdering</span></a>
+  <a href="home.html?lang=sv" aria-current="page" data-home><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h4v16H3ZM18 4h4v16h-4ZM10 4v16M14 4v16M8 10h9M8 14h9"/></svg><span data-i18n="train">Träna</span></a>
+  <a href="index.html?lang=sv&amp;training=progress" data-subscribe="progress"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17 5-9 6 7 7-12M17 3h4v4"/><circle cx="3" cy="17" r="2"/><circle cx="8" cy="8" r="2"/><circle cx="14" cy="15" r="2"/></svg><span data-i18n="progress">Framsteg</span></a>
+  <a href="index.html?lang=sv&amp;training=account" data-subscribe="account"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 2-1 3-3 1-3-1-1 4 3 2v3l-3 2 2 4 3-1 2 2 1 3h4l1-3 2-2 3 1 2-4-3-2v-3l3-2-1-4-3 1-3-1-1-3Z"/><circle cx="12" cy="12" r="4"/></svg><span data-i18n="account">Konto</span></a>
+</nav>
+</body>
+</html>

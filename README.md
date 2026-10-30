@@ -1,26 +1,28 @@
-# Mind+ Click2SMS — variante adicional
-Abrir index.html, o ../click2sms.html desde la carpeta principal.
+# Mind+ Click2SMS
+Esta carpeta es autónoma: se puede copiar o publicar entera sin la carpeta padre.
 
-Flujo:
-1. index.html: selección de entrenamiento en sueco o inglés.
-2. Cualquier tarjeta lleva a subscribe.html.
-3. Skicka SMS / Send SMS prepara MIND al 72300 en la app de mensajes.
-No se envían SMS automáticamente y no se simula una suscripción activada.
+## Abrir
+- index.html: landing de suscripción SMS (MIND al 72300).
+- home.html: pantalla previa con los entrenamientos; las tarjetas abren index.html.
+- subscribe.html: copia compatible de la landing SMS para conservar enlaces anteriores.
+- index.html?lang=en y home.html?lang=en: versiones inglesas.
+- terms.html, privacy.html y cookies.html: páginas legales en sueco, con vuelta al paso de origen.
 
-Se reproduce la disposición móvil del diseño y se adapta el escritorio a tres columnas para los entrenamientos.
-La banda informativa se puede cerrar. El menú inferior usa traducciones suecas en la versión sueca. Las demás secciones llevan al acceso por SMS.
-Los iconos son SVG locales editables; los dos títulos de las categorías cuyos textos no se ven en la captura se han nombrado Koncentrationsträning / Concentration training y Logikträning / Logic training, según los iconos.
-Se comparte el precio vigente: 200 SEK al mes. La palabra de baja sigue siendo STOP Mind+ al 72300.
-Se reutilizan los términos, privacidad, logo y visual del hombre con tarjetas de la carpeta principal.
-En desktop se muestra el número y palabra clave para continuar desde el móvil y un control para copiar MIND.
-La confirmación del mensaje y de la suscripción corresponde al móvil y al servicio real; esta versión no conecta a un backend.
+## Archivos
+CSS, scripts, logo, imagen del hombre y páginas legales están dentro de esta misma carpeta.
+No hace falta copiar recursos desde la carpeta padre.
+Los iconos de entrenamientos son SVG editables incluidos en home.html.
 
-Los documentos legales aceptan from=train y from=c2s para regresar al paso correcto. El idioma se conserva durante el flujo.
-La landing MSISDN/PIN principal conserva sus pantallas y el modo de prueba.
-Los archivos se han preparado localmente; no se ha creado ni actualizado un repositorio remoto.
+## Comportamiento
+Precio: 200 SEK al mes.
+Tarjeta de Mind+: blanca #FFFFFF, azul #4199E2 y texto del botón blanco.
+En móvil, Skicka SMS / Send SMS abre el compositor con MIND al 72300. El visitante revisa y envía el mensaje.
+En desktop aparecen instrucciones para continuar desde el móvil y un control para copiar MIND.
+No se envían SMS automáticamente y no se simula una suscripción confirmada.
+La banda informativa del entrenamiento puede cerrarse. El resto de pestañas lleva al acceso SMS.
+Se conserva el selector SE/EN y el parpadeo suave del botón.
 
-## Verificación
-82 comprobaciones de lógica, idiomas, navegación legal y destino SMS superadas entre ambos servicios con un DOM simulado. Enlaces, recursos e identificadores verificados. Sin prueba visual en navegador ni prueba en dispositivo real disponible.
-
-## Tarjeta SMS actualizada
-Estilos aislados en sms-card.css, cargados al final: fondo sólido, colores, espaciados y botón según Frame 1.png. Se mantiene 200 SEK al mes.
+## Comprobaciones
+82 comprobaciones de lógica, idiomas y navegación superadas entre ambos servicios con un DOM simulado.
+Todos los recursos locales resuelven dentro de cada carpeta Click2SMS; no hay dependencias ../.
+No hay una prueba visual de navegador ni de dispositivo real disponible.

@@ -18,11 +18,11 @@
     const separator=isIOS(userAgent,platform,touchPoints)?'&':'?';
     return 'sms:'+SMS_NUMBER+separator+'body='+encodeURIComponent(keyword);
   }
-  function subscribeHref(lang){return 'subscribe.html?lang='+language(lang);}
+  function subscribeHref(lang){return 'index.html?lang='+language(lang);}
   function legalHref(documentName,page,lang){
     const document=documentName==='privacy.html'?'privacy.html':'terms.html';
     const from=page==='writer'?'writer':page==='train'?'train':'c2s';
-    return '../'+document+'?from='+from+'&lang='+language(lang);
+    return document+'?from='+from+'&lang='+language(lang);
   }
   return Object.freeze({SMS_NUMBER,SMS_KEYWORD,language,isIOS,isMobile,smsHref,subscribeHref,legalHref});
 });
