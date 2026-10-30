@@ -1,0 +1,46 @@
+:root { color-scheme:dark; font-family:"Century Gothic","Trebuchet MS",Arial,sans-serif; color:#f7f8fa; background:#15262f; font-synthesis:none; }
+* { box-sizing:border-box; }
+body.training-page { margin:0; min-width:280px; min-height:100svh; background:linear-gradient(110deg,#132129,#34525e); }
+a { color:inherit; }
+button { font:inherit; cursor:pointer; }
+:focus-visible { outline:3px solid #69d5e8; outline-offset:5px; }
+.training-shell { width:min(100%,480px); min-height:100svh; margin:0 auto; padding:46px 30px 120px; }
+.training-heading { display:flex; align-items:center; justify-content:space-between; gap:18px; margin:0 0 15px; }
+.training-heading h1 { margin:0; font-size:36px; line-height:1.15; font-weight:700; }
+.training-language { display:flex; padding:3px; border-radius:6px; background:rgb(255 255 255 / 12%); }
+.training-language button { min-width:30px; min-height:25px; padding:3px 6px; border:0; border-radius:4px; background:transparent; color:#fff; font-size:11px; }
+.training-language [aria-pressed="true"] { background:#f7f8fa; color:#244653; font-weight:700; }
+.training-notice { position:relative; display:flex; align-items:center; gap:10px; min-height:96px; padding:18px 37px 18px 18px; border-radius:30px; background:#ccebf2; color:#142d37; }
+.training-notice[hidden] { display:none; }
+.notice-icon { display:grid; place-items:center; width:53px; height:53px; flex:0 0 53px; border-radius:50%; background:#7fc5d4; }
+.notice-icon svg { width:42px; height:42px; }
+.training-notice p { margin:0; font-size:11px; line-height:1.25; }
+.notice-close { position:absolute; top:9px; right:14px; padding:0; border:0; background:transparent; color:#57788b; font-family:Arial,sans-serif; font-size:32px; line-height:32px; font-weight:700; }
+.training-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:36px 24px; margin-top:32px; }
+.training-card { display:flex; flex-direction:column; align-items:center; gap:15px; min-width:0; text-decoration:none; text-align:center; font-size:15px; line-height:1.25; }
+.training-circle { display:grid; place-items:center; width:100%; aspect-ratio:1; border-radius:50%; background:#f7f8fa; transition:box-shadow .15s ease; }
+.training-circle svg { width:84%; height:84%; }
+.training-card:hover .training-circle { box-shadow:0 0 0 5px rgb(83 198 218 / 60%); }
+.training-footer { margin:37px 0 0; }
+.training-footer nav { display:flex; flex-wrap:wrap; justify-content:center; gap:12px 22px; }
+.training-footer a { color:#d7e6ec; font-family:Arial,sans-serif; font-size:11px; line-height:20px; text-underline-offset:3px; }
+.train-tabs { position:fixed; z-index:5; left:50%; bottom:0; display:flex; width:min(100%,480px); min-height:90px; padding:20px 15px max(14px,env(safe-area-inset-bottom)); border-radius:34px 34px 0 0; background:#f7f8fa; transform:translateX(-50%); box-shadow:0 -6px 25px rgb(0 0 0 / 6%); }
+.train-tabs a { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; min-width:0; text-decoration:none; color:#475d6f; font-size:12px; line-height:1.2; }
+.train-tabs svg { width:23px; height:23px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
+.train-tabs [aria-current="page"] { color:#36b6cc; }
+.train-tabs a:hover { color:#259caf; }
+@media(min-width:900px){
+  .training-shell { width:min(100% - 80px,1040px); padding:44px 0 132px; }
+  .training-heading { margin-bottom:24px; }
+  .training-heading h1 { font-size:44px; }
+  .training-language button { font-size:13px; min-width:38px; min-height:30px; }
+  .training-notice { max-width:760px; min-height:90px; padding:18px 50px 18px 22px; border-radius:28px; }
+  .training-notice p { font-size:14px; line-height:1.4; }
+  .training-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:38px 44px; max-width:910px; margin:35px auto 0; }
+  .training-card { gap:18px; font-size:18px; }
+  .training-circle { max-width:225px; }
+  .train-tabs { width:min(100% - 80px,760px); min-height:86px; padding-top:14px; border-radius:24px 24px 0 0; }
+  .train-tabs a { font-size:14px; gap:7px; }
+  .training-footer a { font-size:12px; }
+}
+@media(prefers-reduced-motion:reduce){.training-circle{transition:none}}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#96c7fa">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Mind+ | Prenumerera med SMS</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="click2sms.css">
+  <link rel="stylesheet" href="sms-card.css?v=20261030-2">
+  <script src="flow.js" defer></script>
+  <script src="click2sms.js" defer></script>
+</head>
+<body class="sms-page" data-service="mind" data-flow-page="c2s">
+<div class="site">
+  <header class="brandbar">
+    <a class="brand" href="index.html" aria-label="Mind+ – startsida" data-home><img src="../logo.png" width="29" height="23" alt="Mind+"></a>
+    <nav class="language-switch" aria-label="Språk / Language">
+      <button type="button" data-language="sv" lang="sv" aria-label="Svenska" aria-pressed="true">SE</button>
+      <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+    </nav>
+  </header>
+  <main class="landing-content">
+    <section class="hero" aria-label="Mind+ hjärnträning" data-hero>
+      <img class="hero-art" src="../img.png" width="390" height="470" alt="En man med en mobiltelefon omgiven av minne, fokus, logik, problemlösning och bearbetningshastighet." fetchpriority="high" data-person>
+      <h1 class="intro" data-i18n="intro">Mind+ är en hjärnträningstjänst som utvecklar dina kognitiva förmågor.</h1>
+    </section>
+    <section class="form-card sms-card" aria-labelledby="sms-instruction">
+      <h2 id="sms-instruction" class="sms-instruction" data-i18n="subscribe">Prenumerera genom att skicka</h2>
+      <p class="sms-destination"><span>MIND</span> <span class="destination-to" data-i18n="to">till</span> <span>72300</span></p>
+      <a class="cta sms-button" id="sms-button" href="sms:72300?body=MIND" data-i18n="sendSms" aria-describedby="price">Skicka SMS</a>
+      <p class="price" id="price" data-i18n="price">Aktivera för 200 SEK per månad</p>
+      <p class="sms-status" id="sms-status" role="status" aria-live="polite" hidden></p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p class="disclaimer"><span data-i18n="disclaimer">Du kan när som helst avsluta tjänsten genom att skicka STOP Mind+ till 72300. Träna din hjärna med hjälp av spel. Genom att fortsätta bekräftar du att du är minst 18 år. För mer information, kontakta oss via e-post: </span><a href="mailto:support@mindplus.store">support@mindplus.store</a><span data-i18n="supportPhone"> eller ring kundsupport: </span><span>[XXXXXXXXX]</span><br><span data-i18n="provider">Denna tjänst tillhandahålls av Playwing LTD.</span></p>
+    <nav class="footer-links" aria-label="Juridisk information" data-footer-nav>
+      <a href="../terms.html?from=c2s&amp;lang=sv" data-legal="terms.html" data-i18n="terms">Villkor &amp; Betingelser</a>
+      <a href="../privacy.html?from=c2s&amp;lang=sv" data-legal="privacy.html" data-i18n="privacy">Integritetspolicy</a>
+    </nav>
+  </footer>
+</div>
+<dialog id="desktop-sms" class="sms-dialog" aria-labelledby="desktop-sms-title">
+  <button class="dialog-close" type="button" data-close-dialog aria-label="Stäng">×</button>
+  <h2 id="desktop-sms-title" data-i18n="desktopTitle">Fortsätt på din mobil</h2>
+  <p data-i18n="desktopText">Öppna SMS-appen på din mobil och skicka följande meddelande:</p>
+  <dl class="sms-details"><div><dt data-i18n="recipient">Mottagare</dt><dd>72300</dd></div><div><dt data-i18n="message">Meddelande</dt><dd>MIND</dd></div></dl>
+  <button class="copy-button" type="button" data-copy data-i18n="copy">Kopiera MIND</button>
+  <p class="dialog-price" data-i18n="price">Aktivera för 200 SEK per månad</p>
+  <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+</dialog>
+</body>
+</html>
